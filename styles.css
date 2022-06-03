@@ -1,13 +1,19 @@
 
 /* Nav Bar */
 #navbar-container{
+    /*
     background-color: #5D3FD3;
     display: flex;
     align-items: center;
     justify-content: center;
+    */
 }
 
 ul{
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     list-style-type: none;
     margin: 0;
     padding: 0;
@@ -17,10 +23,23 @@ ul{
 
 li {
     float: left;
+    color: #5D3FD3;;
+    text-align: center;
+    padding: 14px 16px;
+    padding-bottom: 20px;
+    text-decoration: none;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 17px;
+}
+
+li:hover{
+    background-color: #5D3FD3;
+    color: white;
 }
 
 /* Title Name */
 #name-container{
+    width: 100vw;
     background-color: #5D3FD3;
     display: flex;
     align-items: center;
@@ -33,5 +52,4 @@ li {
     font-weight: lighter;
     font-size: 64px;
     line-height: 77px;
-
 }
