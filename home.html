@@ -6,10 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric's Personal Website</title>
     <link rel="stylesheet" href="../styles.css" />
+    <!-- For Social Media Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
 </head>
 <body>
    <main>
-       <div class="navbar-container" id="navbar-container">
+       <div class="container navbar-container" id="navbar-container">
            <nav class="nav-list">
                <ul class="unordered-list" id="unordered-list">
                    <li class="list-item" id="about-navbar-item">About</li>
@@ -19,24 +21,47 @@
                </ul>
            </nav>
        </div>
-       <div class="name-container" id="name-container">
-           <h1 id="name">Eric Anderson</h1>
+       <div class="container name-container" id="name-container">
+           <h1 id="name">Hello! I'm Eric Anderson</h1>
        </div>
-       <div class="about-container">
+       <div class="container about-container">
            <h1>About me</h1>
+           <div class="about-paragraph-container">
+               <p>Hello! My name is Eric Anderson. I am currently a Senior at Portland State University expecting to graduate 
+                   at the end of Spring, 2022. I will be heading over to Chicago, IL as a Java Software Engineer as part of JPMorgan 
+                   Chase's Software Engineering Program.
+               </p>
+               <p>
+                   Here is a list of technologies I have learned throughout my college cirriculum: 
+               </p>
+               <!-- Insert languages and pics  -->
+           </div>
 
        </div>
-       <div class="previous-work-container">
+       <div class="container previous-work-container">
            <h1>Work History</h1>
 
        </div>
-       <div class="projects-container">
+       <div class="container projects-container">
            <h1>Projects</h1>
+           <div class="projects-list-container">
+               <ul class="unordered-projects-list">
+                   <li class="project-list-item" id="project-list-item1"><a href="https://github.com/ericanderson333/frontend-cryptodash">Crypto Dashboard React App</a></li>
+                   <li class="project-list-item" id="project-list-item2"><a href="https://github.com/ericanderson333/Stock_Analysis_Spring_Boot">Stock Predicter Spring App</a></li>
+                   <li class="project-list-item" id="project-list-item3"><a href="https://github.com/ericanderson333/Martingale_Strategy_Backtest">Martingale Strategy Backtest</a></li>
+               </ul>
+           </div>
 
        </div>
-       <div class="contact-container">
+       <div class="container contact-container">
            <h1>Contact</h1>
-
+           <div class="contact-buttons-container">
+            <!-- Email -->
+            <a href="mailto:ericsanderson333@gmail.com" class="fa email">Email</a>
+            <a href="https://www.instagram.com/ericanderson333/" class="fa fa-instagram"></a>
+            <a href="https://www.linkedin.com/in/ericanderson333/" class="fa fa-linkedin"></a>
+            <a href="https://github.com/ericanderson333" class="fa fa-github"></a>
+           </div>
        </div>
    </main> 
 </body>
