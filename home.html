@@ -5,9 +5,13 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Eric's Personal Website</title>
+    <!-- For Cards in Projects -->
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous"> -->
     <link rel="stylesheet" href="../styles.css" />
     <!-- For Social Media Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- For Programming Language Icons -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
 </head>
 <body>
    <main>
@@ -15,54 +19,109 @@
            <nav class="nav-list">
                <ul class="unordered-list" id="unordered-list">
                    <li class="list-item" id="about-navbar-item">About</li>
-                   <li class="list-item" id="previous-work-navbar-item">Previous Work</li>
+                   <li class="list-item" id="work-history-navbar-item">Work History</li>
                    <li class="list-item" id="projects-navbar-item">Projects</li>
                    <li class="list-item" id="contact-navbar-item">Contact</li>
                </ul>
            </nav>
        </div>
        <div class="container name-container" id="name-container">
-           <h1 id="name">Hello! I'm Eric Anderson</h1>
+           <div class="title-container" id="name-title-container">
+           </div>
        </div>
        <div class="container about-container">
-           <h1>About me</h1>
-           <div class="about-paragraph-container">
-               <p>Hello! My name is Eric Anderson. I am currently a Senior at Portland State University expecting to graduate 
-                   at the end of Spring, 2022. I will be heading over to Chicago, IL as a Java Software Engineer as part of JPMorgan 
-                   Chase's Software Engineering Program.
-               </p>
-               <p>
-                   Here is a list of technologies I have learned throughout my college cirriculum: 
-               </p>
-               <!-- Insert languages and pics  -->
+           <div class="title-container" id="about-title-container">
+            <h1>About me</h1>
            </div>
-
+           <div class="content-container" id="about-content-container">
+            <div class="left about-paragraph-container">
+                <p>Hello! My name is Eric Anderson. I am currently a Senior at Portland State University expecting to graduate 
+                    at the end of Spring, 2022. I will be heading over to Chicago, IL as a Java Software Engineer as part of JPMorgan 
+                    Chase's Software Engineering Program.
+                </p>
+                <p>
+                    Here is a list of technologies I have learned throughout my college cirriculum: 
+                </p>
+                <!-- Insert languages and pics  -->
+                <ul class="languages-list" id="programming-language-list">
+                    <li class="language-list-item" id="java-language-list-item"><i class="devicon-java-plain-wordmark"></i></li>
+                    <li class="language-list-item" id="python-language-list-item"><i class="devicon-python-plain-wordmark"></i></li>
+                    <li class="language-list-item" id="jetbrains-language-list-item"><i class="devicon-jetbrains-plain"></i></li>
+                    <li class="language-list-item" id="jenkins-language-list-item"><i class="devicon-jenkins-plain"></i></li>
+                    <li class="language-list-item" id="javascript-language-list-item"><i class="devicon-javascript-plain"></i></li>
+                    <li class="language-list-item" id="selenium-language-list-item"><i class="devicon-selenium-original"></i></li>
+                    <li class="language-list-item" id="spring-language-list-item"><i class="devicon-spring-plain-wordmark"></i></li>
+                </ul>
+            </div>
+            <div class="right about-selfie-container" id="selfie-container" >
+                <img src="/static/selfie.JPG" alt="Picture of Eric Anderson" id="selfie">
+            </div>
+           </div>
        </div>
-       <div class="container previous-work-container">
-           <h1>Work History</h1>
-
+       <div class="container work-history-container">
+           <div class="title-container" id="work-history-title-container">
+            <h1>Work History</h1>
+           </div>
+           <div class="content-container" id="work-history-content-container">
+            <div class="card" id="job1-card">
+                <img src="https://wearetechwomen.com/wp-content/uploads/2020/07/J.P.-Morgan-square.jpg" class="card-img-top" id="jpmorgan-chase-image" alt="JPMorgan Chase Logo">
+                <div class="card-body">
+                  <h4 class="card-title">SEP Software Engineer | July 2022 - Present</h4>
+                  <p class="card-text">- Backend development with JPMorgan Chase's payment technology services</p>
+                  <p class="card-text">- API development/refactoring with Java and Spring Boot</p>
+                  <p class="card-text">- Manage database querying through AWS</p>
+                </div>
+            </div>
+            <div class="card" id="job2-card">
+                <img src="https://media.glassdoor.com/sqll/615153/xpo-logistics-squarelogo-1604410310156.png" class="card-img-top" id="xpo-logo-image" alt="XPO Logistics Logo">
+                <div class="card-body">
+                  <h4 class="card-title">QA Automation Engineer Intern | June 2021 - March 2022 </h4>
+                  <p class="card-text">- Automate API, UI, and Database testing with RestAssured, Selenium, and Chrome Dev Tools</p>
+                  <p class="card-text">- Managed legacy rewrite QA Repository</p>
+                  <p class="card-text">- Built and supervised multiple CI/CD Pipelines on Jenkins</p>
+                </div>
+            </div>
+            <div class="card" id="job3-card">
+                <img src="https://1000logos.net/wp-content/uploads/2017/08/Fiverr-emblem.jpg" class="card-img-top" id="fiverr-image" alt="Fiverr Logo">
+                <div class="card-body">
+                  <h4 class="card-title">Freelance Software Developer | August 2020 - December 2020</h4>
+                  <p class="card-text">- Developed 10 year stock analyzer</p>
+                  <p class="card-text">- Automated technical analysis trading on multiple supported platforms (Robinhood, FX, TDAmeritrade)</p>
+                  <p class="card-text">- Implemented sentimental analysis algorithm based on daily finance news</p>
+                </div>
+            </div>
+           </div>
        </div>
        <div class="container projects-container">
-           <h1>Projects</h1>
-           <div class="projects-list-container">
-               <ul class="unordered-projects-list">
-                   <li class="project-list-item" id="project-list-item1"><a href="https://github.com/ericanderson333/frontend-cryptodash">Crypto Dashboard React App</a></li>
-                   <li class="project-list-item" id="project-list-item2"><a href="https://github.com/ericanderson333/Stock_Analysis_Spring_Boot">Stock Predicter Spring App</a></li>
-                   <li class="project-list-item" id="project-list-item3"><a href="https://github.com/ericanderson333/Martingale_Strategy_Backtest">Martingale Strategy Backtest</a></li>
-               </ul>
-           </div>
-
+          <div class="title-container" id="projects-title-container">
+                <h1>Projects</h1>
+          </div> 
+          <div class="content-container" id="projects-content-container">
+            <!-- <div class="projects-list-container">
+                <ul class="unordered-projects-list">
+                    <li class="project-list-item" id="project-list-item1"><a href="https://github.com/ericanderson333/frontend-cryptodash">Crypto Dashboard React App</a></li>
+                    <li class="project-list-item" id="project-list-item2"><a href="https://github.com/ericanderson333/Stock_Analysis_Spring_Boot">Stock Predicter Spring App</a></li>
+                    <li class="project-list-item" id="project-list-item3"><a href="https://github.com/ericanderson333/Martingale_Strategy_Backtest">Martingale Strategy Backtest</a></li>
+                </ul>
+            </div> -->
+          </div>
        </div>
        <div class="container contact-container">
-           <h1>Contact</h1>
-           <div class="contact-buttons-container">
-            <!-- Email -->
-            <a href="mailto:ericsanderson333@gmail.com" class="fa email">Email</a>
-            <a href="https://www.instagram.com/ericanderson333/" class="fa fa-instagram"></a>
-            <a href="https://www.linkedin.com/in/ericanderson333/" class="fa fa-linkedin"></a>
-            <a href="https://github.com/ericanderson333" class="fa fa-github"></a>
+           <div class="title-container" id="contact-title-container">
+            <h1>Contact</h1>
+           </div>
+           <div class="content-container" id="contact-content-container">
+            <div class="contact-buttons-container">
+                <!-- Email -->
+                <a href="mailto:ericsanderson333@gmail.com" class="fa email">Email</a>
+                <a href="https://www.instagram.com/ericanderson333/" class="fa fa-instagram"></a>
+                <a href="https://www.linkedin.com/in/ericanderson333/" class="fa fa-linkedin"></a>
+                <a href="https://github.com/ericanderson333" class="fa fa-github"></a>
+            </div>
            </div>
        </div>
+        <!-- Script after page renders -->
+        <script src="/index.js"></script>
    </main> 
 </body>
 </html>

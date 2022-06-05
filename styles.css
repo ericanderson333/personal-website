@@ -1,4 +1,21 @@
+/* Remove all margins on main page*/
+body{
+    margin: 0;
+}
+
 /* Set background for every other div */
+.container{
+    width: 100v;
+    overflow: hidden;
+}
+.container:nth-child(2){
+    height: 300px;
+}
+
+.container:not(:first-child):not(:nth-child(2)){
+    height: 500px;
+    padding-bottom: 30px;
+}
 main > .container:nth-child(even){
     background-color: #5D3FD3;
     color: white;
@@ -11,8 +28,39 @@ main > .container:nth-child(odd){
     font-family: Verdana, Geneva, Tahoma, sans-serif;
 }
 
+/* Center titles */
+.title-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Set flex properties. row
+ Note: May need to exclude last (Contact section)*/
+.content-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    /* width: 40vw; */
+}
+
+.content-container > div{
+    margin-left: 5vw ;
+    margin-right: 5vw ;
+}
+
+.left {
+    float: left;
+}
+
+.right{
+    float: right;
+}
+
 /* Nav Bar */
 #navbar-container{
+    position: fixed;
     /*
     background-color: #5D3FD3;
     display: flex;
@@ -29,6 +77,7 @@ main > .container:nth-child(odd){
     list-style-type: none;
     margin: 0;
     padding: 0;
+    padding-bottom: 1px;
     overflow: hidden;
     background-color: white;
 }
@@ -52,7 +101,6 @@ main > .container:nth-child(odd){
 /* Title Name */
 #name-container{
     width: 100vw;
-    /* background-color: #5D3FD3; */
     display: flex;
     align-items: center;
     justify-content: center;
@@ -66,9 +114,44 @@ main > .container:nth-child(odd){
     line-height: 77px;
 }
 
+/* About me */
+#selfie{
+    width: 300px;
+}
+
+.languages-list{
+    /* display: flex;
+    align-items: center;
+    justify-content: center; */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    /* overflow: hidden; */
+}
+
+.language-list-item{
+    float: left;
+    /* text-align: center; */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 100px;
+}
+
+.language-list-item:hover{
+    background-color: #5D3FD3;
+    color: white;
+}
+
+/* Work History */
+.card > img{
+    height: 200px;
+    width: 200px;
+}
+
+.card {
+    width: 30vw;
+}
 
 /* Contact */
-/* Style all font awesome icons */
 .fa {
     background-color: white;
     color: #5D3FD3;
@@ -80,7 +163,6 @@ main > .container:nth-child(odd){
     border-radius: 50%;
   }
   
-  /* Add a hover effect if you want */
   .fa:hover {
     opacity: 0.7;
   }
