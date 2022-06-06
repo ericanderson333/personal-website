@@ -22,4 +22,4 @@ Some features of the project include the following:
 - <a href="https://developer.mozilla.org/en-US/" target="_blank">Mozilla Developer Network</a>
 - <a href="https://devicon.dev/" target="_blank">Programming Langauge Icons</a>
 - <a href="https://fontawesome.com/" target="_blank">Font Ideas/References</a>
-- <a href="https://stackoverflow.com/" target="_blank">StackOverflow</a>
+- <a href="https://stackoverflow.com/questions/5080699/how-can-i-style-even-and-odd-elements" target="_blank">Even and odd selectors (StackOverflow)</a>
