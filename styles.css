@@ -201,6 +201,7 @@ main > .container:nth-child(odd){
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
+    width: 23vw;
 }
 
 .btn > a {
