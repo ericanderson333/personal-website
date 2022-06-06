@@ -173,12 +173,24 @@ main > .container:nth-child(odd){
 }
   
 .content {
-    padding: 0 18px;
+    width: 23vw;
+    padding: 0;
     display: none;
     overflow: hidden;
     background-color: #f1f1f1;
 }
 
+.collapsible-button::after {
+    content: '\02795'; /* Unicode character for "plus" sign (+) */
+    font-size: 13px;
+    color: white;
+    float: right;
+    margin-left: 5px;
+}
+  
+.active:after {
+    content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
 
 .btn{
     background-color:#5D3FD3; /* Green */
@@ -214,11 +226,11 @@ main > .container:nth-child(odd){
     text-align: center;
     text-decoration: none;
     border-radius: 50%;
-  }
+}
   
-  .fa:hover {
+.fa:hover {
     opacity: 0.7;
-  }
+}
 
 form{
     display: flex;
@@ -230,10 +242,9 @@ form{
 .form-element{
     float: left;
 }
-
-   
+ 
 .submit-button{
-    background-color: white; /* Green */
+    background-color: white; 
     border: none;
     color:#5D3FD3;
     padding: 15px 32px;
