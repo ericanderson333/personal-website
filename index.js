@@ -40,3 +40,20 @@ document.getElementById('projects-navbar-item').onclick = () => scroll(projectsC
 document.getElementById('contact-navbar-item').onclick = () => scroll(contactContainer);
  
 nameAnimation("Hello! I'm Eric Anderson");
+
+// For Collapsable Projects
+const collapsibleEl = document.querySelectorAll('.collapsible-button');
+let i;
+
+collapsibleEl.forEach((button) => {
+    button.addEventListener('click', () => {
+    button.classList.toggle('active');
+    let content = button.nextElementSibling;
+    if (content.style.display === 'block') {
+      content.style.display = 'none';
+    } else {
+      content.style.display = 'block';
+      content.style.alignText = 'center';
+    }
+    })
+})

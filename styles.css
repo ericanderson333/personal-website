@@ -5,9 +5,10 @@ body{
 
 /* Set background for every other div */
 .container{
-    width: 100v;
+    width: 100vw;
     overflow: hidden;
 }
+
 .container:nth-child(2){
     height: 300px;
 }
@@ -16,6 +17,7 @@ body{
     height: 500px;
     padding-bottom: 30px;
 }
+
 main > .container:nth-child(even){
     background-color: #5D3FD3;
     color: white;
@@ -37,7 +39,7 @@ main > .container:nth-child(odd){
 
 /* Set flex properties. row
  Note: May need to exclude last (Contact section)*/
-.content-container{
+.content-container:not(:nth-child(4)){
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -151,7 +153,58 @@ main > .container:nth-child(odd){
     width: 30vw;
 }
 
+/* Projects */
+.collapsible-button {
+    background-color:#5D3FD3;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 23vw;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+    font-weight: 450;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+  
+.active, .collapsible-button:hover {
+    background-color: mediumslateblue;
+}
+  
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+
+
+.btn{
+    background-color:#5D3FD3; /* Green */
+    border: none;
+    color:white;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}
+
+.btn > a {
+    color:white;
+    text-decoration: none;
+}
+
+
+
 /* Contact */
+.contact-container > .content-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .fa {
     background-color: white;
     color: #5D3FD3;
@@ -166,4 +219,26 @@ main > .container:nth-child(odd){
   .fa:hover {
     opacity: 0.7;
   }
+
+form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 15px;
+}
+.form-element{
+    float: left;
+}
+
    
+.submit-button{
+    background-color: white; /* Green */
+    border: none;
+    color:#5D3FD3;
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+}

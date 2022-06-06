@@ -97,13 +97,27 @@
                 <h1>Projects</h1>
           </div> 
           <div class="content-container" id="projects-content-container">
-            <!-- <div class="projects-list-container">
-                <ul class="unordered-projects-list">
-                    <li class="project-list-item" id="project-list-item1"><a href="https://github.com/ericanderson333/frontend-cryptodash">Crypto Dashboard React App</a></li>
-                    <li class="project-list-item" id="project-list-item2"><a href="https://github.com/ericanderson333/Stock_Analysis_Spring_Boot">Stock Predicter Spring App</a></li>
-                    <li class="project-list-item" id="project-list-item3"><a href="https://github.com/ericanderson333/Martingale_Strategy_Backtest">Martingale Strategy Backtest</a></li>
-                </ul>
-            </div> -->
+              <div class="project-container" id="project1-container">
+                <button type="button" class="collapsible-button">Crypto Dashboard</button>
+                <div class="content">
+                    <p>Description</p>
+                    <button class="btn" type="button"><a href="https://github.com/ericanderson333/frontend-cryptodash" target="_blank">Go to Project 1</a></button>
+                </div>
+              </div>
+              <div class="project-container" id="project2-container">
+                <button type="button" class="collapsible-button">Stock Analysis Dashboard</button>
+                <div class="content">
+                    <p>Description</p>
+                    <button class="btn" type="button"><a href="https://github.com/ericanderson333/Stock_Analysis_Spring_Boot" target="_blank">Go to Project 2</a></button>
+                </div>
+              </div>
+              <div class="project-container" id="project3-container">
+                <button type="button" class="collapsible-button">Martingale Strategy Backtest</button>
+                <div class="content">
+                    <p>Description</p>
+                    <button class="btn" type="button"><a href="https://github.com/ericanderson333/Martingale_Strategy_Backtest" target="_blank">Go to Project 3</a></button>
+                </div>
+              </div>
           </div>
        </div>
        <div class="container contact-container">
@@ -111,9 +125,26 @@
             <h1>Contact</h1>
            </div>
            <div class="content-container" id="contact-content-container">
+            <div>
+                <form class="form" action="">
+                  <div class="form-element">
+                    <p>
+                      Email: <input class="input-text" type="email" name="email" id="email" max="50" required="required"/>
+                    </p>
+                  </div>
+                  <div class="form-element">
+                    <p>
+                      Subject: <input class="input-text" type="text" name="username" id="username" maxlength="100" required="required"/> 
+                    </p>
+                  </div>
+                  <div class="form-element">
+                      Message:<br> <textarea name="Message" id="message-body" cols="30" rows="10"></textarea>
+                  </div>
+                  <input class="btn submit-button" type="submit" name="submit" value="Submit">
+                </form>
+
+            </div>
             <div class="contact-buttons-container">
-                <!-- Email -->
-                <a href="mailto:ericsanderson333@gmail.com" class="fa email">Email</a>
                 <a href="https://www.instagram.com/ericanderson333/" class="fa fa-instagram"></a>
                 <a href="https://www.linkedin.com/in/ericanderson333/" class="fa fa-linkedin"></a>
                 <a href="https://github.com/ericanderson333" class="fa fa-github"></a>
